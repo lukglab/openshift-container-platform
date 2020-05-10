@@ -5,11 +5,6 @@ export USERNAME_ORG=$1
 export PASSWORD_ACT_KEY="$2"
 export POOL_ID=$3
 
-# Remove RHUI
-
-rm -f /etc/yum.repos.d/rh-cloud.repo
-sleep 10
-
 # Install base packages and update system to latest packages
 echo $(date) " - Install base packages and update system to latest packages"
 

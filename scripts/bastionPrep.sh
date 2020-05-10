@@ -25,11 +25,6 @@ echo $(date) " - Generating Private keys for use by Ansible for OpenShift Instal
 runuser -l $SUDOUSER -c "echo \"$PRIVATEKEY\" > ~/.ssh/id_rsa"
 runuser -l $SUDOUSER -c "chmod 600 ~/.ssh/id_rsa*"
 
-# Remove RHUI
-
-rm -f /etc/yum.repos.d/rh-cloud.repo
-sleep 10
-
 # Update system to latest packages
 echo $(date) " - Update system to latest packages"
 yum -y update --exclude=WALinuxAgent
