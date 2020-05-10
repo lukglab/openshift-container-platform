@@ -265,7 +265,7 @@ new_nodes
 ansible_ssh_user=$SUDOUSER
 ansible_become=yes
 openshift_install_examples=true
-deployment_type=openshift-enterprise
+deployment_type=orgin
 openshift_release=v3.11
 openshift_image_tag=v3.11.${MINORVERSION}
 openshift_pkg_version=-3.11.${MINORVERSION}
