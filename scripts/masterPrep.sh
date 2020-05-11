@@ -8,6 +8,7 @@ export POOL_ID=$3
 # Install base packages and update system to latest packages
 echo $(date) " - Install base packages and update system to latest packages"
 
+yum -y install epel-release
 yum -y install wget git net-tools bind-utils iptables-services bridge-utils bash-completion httpd-tools kexec-tools sos psacct ansible
 yum -y install cloud-utils-growpart.noarch
 yum -y update glusterfs-fuse
